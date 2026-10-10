@@ -1,0 +1,15 @@
+{
+  "exact_text_to_field": {
+    "Mr. Md Ali Ahmed": "borrower_name",
+    "Jalalpur Branch": "branch",
+    "Tk.40,00,000/-": "loan_amount",
+    "Pubali Abashon Loan": "loan_product",
+    "05 (Five) years": "tenure_months"
+  },
+  "blocked_old_values": [
+    "Mr. Md Ali Ahmed",
+    "Jalalpur Branch",
+    "Pirij Pur",
+    "Tk.40,00,000/-"
+  ]
+}

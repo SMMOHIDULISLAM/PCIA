@@ -1,0 +1,511 @@
+{
+  "borrower_name": [
+    {
+      "id": "applicant_name_simple",
+      "pattern": "\\bApplicant(?:'|’)?s Name\\s*:\\s*(?P<value>[^\\n|]{3,120})",
+      "confidence": 0.96
+    },
+    {
+      "id": "applicant_business_sentence",
+      "pattern": "\\bI/We\\s+(?P<value>[A-Z][A-Z &.'\\-]{3,120}?)\\s+hereby apply",
+      "confidence": 0.98
+    },
+    {
+      "id": "name_of_account",
+      "pattern": "\\bName of the A/C\\s*:\\s*(?P<value>[^\\n|]{3,120})",
+      "confidence": 0.99
+    },
+    {
+      "id": "borrower_name_address",
+      "pattern": "\\bBorrower(?:'|’)?s Name\\s*&\\s*address\\s*:\\s*(?P<value>[^,\\n|]{3,120})",
+      "confidence": 0.99
+    },
+    {
+      "id": "name_applicant",
+      "pattern": "\\b(?:Name of Applicant|Applicant(?:\\'s)? Name|Name of Borrower|Borrower(?:\\'s)? Name|Name of the Client(?:s)?)\\s*[:\\-]\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,80}?)(?=\\s*(?:\\||\\n|Father|Mother|Spouse|A/C|Account|NID|$))",
+      "confidence": 0.96
+    },
+    {
+      "id": "name_favouring",
+      "pattern": "\\b(?:favouring|favoring)\\s+(?:Mr\\.?|Mrs\\.?|Ms\\.?)?\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,60}?)\\s+(?:of|under|for)\\b",
+      "confidence": 0.88
+    },
+    {
+      "id": "name_ac",
+      "pattern": "\\bA/C\\.?\\s*(?:Mr\\.?|Mrs\\.?|Ms\\.?)?\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,60})(?=\\s*(?:\\||\\n|$))",
+      "confidence": 0.76
+    }
+  ],
+  "father_name": [
+    {
+      "id": "father",
+      "pattern": "\\b(?:Father(?:\\'s)? Name|S/O|Son of)\\s*[:\\-]?\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,80}?)(?=\\s*(?:\\||\\n|Mother|Spouse|Address|$))",
+      "confidence": 0.94
+    }
+  ],
+  "mother_name": [
+    {
+      "id": "mother",
+      "pattern": "\\b(?:Mother(?:\\'s)? Name|D/O.*?&\\s*|Daughter of)\\s*[:\\-]?\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,80}?)(?=\\s*(?:\\||\\n|Spouse|Address|$))",
+      "confidence": 0.9
+    }
+  ],
+  "spouse_name": [
+    {
+      "id": "spouse",
+      "pattern": "\\b(?:Spouse(?:\\'s)? Name|Husband(?:\\'s)? Name|Wife(?:\\'s)? Name)\\s*[:\\-]?\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,80}?)(?=\\s*(?:\\||\\n|NID|Mobile|Address|$))",
+      "confidence": 0.94
+    }
+  ],
+  "guarantor_name": [
+    {
+      "id": "guarantor",
+      "pattern": "\\b(?:Name of Guarantor|Guarantor(?:\\'s)? Name|Personal Guarantee of)\\s*[:\\-]?\\s*(?:Mr\\.?|Mrs\\.?|Ms\\.?)?\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,80}?)(?=\\s*(?:\\||\\n|NID|Address|$))",
+      "confidence": 0.92
+    }
+  ],
+  "branch": [
+    {
+      "id": "branch_name_label",
+      "pattern": "\\bBranch Name\\s*:\\s*(?P<value>[A-Za-z][A-Za-z .'-]{2,45}\\s+Branch(?:,\\s*[A-Za-z .'-]+)?)",
+      "confidence": 0.99
+    },
+    {
+      "id": "branch_label",
+      "pattern": "\\b(?:Branch|Originating Branch)\\s*[:\\-]\\s*(?P<value>[A-Za-z][A-Za-z .\\'-]{2,45}\\s+Branch(?:,\\s*[A-Za-z .\\'-]+)?)",
+      "confidence": 0.92
+    },
+    {
+      "id": "branch_letterhead",
+      "pattern": "\\b(?P<value>[A-Z][A-Za-z .\\'-]{2,45}\\s+Branch(?:,\\s*(?:Sylhet|Sunamgonj|Sunamganj|Habiganj|Moulvibazar))?)\\b",
+      "confidence": 0.72
+    }
+  ],
+  "loan_product": [
+    {
+      "id": "facility_label_generic",
+      "pattern": "\\b(?:Type|Nature) of (?:Credit )?Facility\\s*[:\\-]?\\s*(?P<value>[^\\n|]{3,100})",
+      "confidence": 0.9
+    },
+    {
+      "id": "krishi_uddokta",
+      "pattern": "\\b(?P<value>Pubali Krishi Uddokta Rin)\\b",
+      "confidence": 0.99
+    },
+    {
+      "id": "product",
+      "pattern": "\\b(?P<value>(?:Pubali Abashon(?: Loan)?|Government Employee HBL|Govt\\.? Employee HBL|HPSM(?: Pubali Abashon)?|Bai[- ]?Muajjal(?: TR)?|Lease Finance|PBL Sujon Rin|Pubali Star|SME Finance))\\b",
+      "confidence": 0.94
+    }
+  ],
+  "loan_amount": [
+    {
+      "id": "apply_amount",
+      "pattern": "\\bhereby apply for (?:credit|investment)[^\\n]{0,100}?of\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.96
+    },
+    {
+      "id": "amount_recommended",
+      "pattern": "\\bAmount recommended by us\\s*:\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.98
+    },
+    {
+      "id": "loan_amount_wanted",
+      "pattern": "\\bLoan Amount Wanted\\s*:\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.99
+    },
+    {
+      "id": "amount_label",
+      "pattern": "\\b(?:Loan Amount|Amount Applied|Limit of|Facility Amount|Sanction of Limit)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Crore|Cr\\.?|Lac|Lakh)?(?:\\s*only)?)",
+      "confidence": 0.94
+    },
+    {
+      "id": "amount_subject",
+      "pattern": "\\b(?:limit|loan)\\s+of\\s+(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Crore|Cr\\.?|Lac|Lakh)?)",
+      "confidence": 0.84
+    }
+  ],
+  "purpose": [
+    {
+      "id": "purpose_facility",
+      "pattern": "\\bPurpose of Facility\\s*[:\\-]?\\s*(?P<value>[^\\n|]{3,200})",
+      "confidence": 0.9
+    },
+    {
+      "id": "purpose_of_loan",
+      "pattern": "\\bPurpose of the loan\\s*:\\s*(?P<value>[^\\n|]{5,350})",
+      "confidence": 0.99
+    },
+    {
+      "id": "purpose_label",
+      "pattern": "\\bPurpose\\s*[:\\-]\\s*(?P<value>[^\\n|]{5,350})",
+      "confidence": 0.9
+    },
+    {
+      "id": "purpose_for",
+      "pattern": "\\b(?:loan|limit)\\s+(?:is\\s+)?(?:required\\s+)?for\\s+(?P<value>[^\\n.]{5,300})",
+      "confidence": 0.75
+    }
+  ],
+  "tenure_months": [
+    {
+      "id": "monthly_installments_digits",
+      "pattern": "\\b(?P<value>\\d{1,3})\\s+monthly installments",
+      "confidence": 0.94
+    },
+    {
+      "id": "monthly_installments",
+      "pattern": "\\b(?:By\\s+)?(?:[A-Za-z -]+\\s*)?\\((?P<value>\\d{1,3})\\)\\s+monthly installments",
+      "confidence": 0.96
+    },
+    {
+      "id": "period_of",
+      "pattern": "\\b(?:for\\s+the\\s+)?period of\\s+(?P<value>\\d{1,3}\\s*(?:years?|months?))",
+      "confidence": 0.98
+    },
+    {
+      "id": "tenure",
+      "pattern": "\\b(?:Tenure|Validity Period|Loan Period|Repayment Period)\\s*[:\\-]?\\s*(?P<value>\\d{1,3}\\s*(?:months?|years?))",
+      "confidence": 0.92
+    },
+    {
+      "id": "tenure_for",
+      "pattern": "\\bfor\\s+(?P<value>\\d{1,3}\\s*\\([^)]*\\)?\\s*(?:months?|years?))",
+      "confidence": 0.76
+    }
+  ],
+  "moratorium_months": [
+    {
+      "id": "moratorium",
+      "pattern": "\\b(?:Moratorium|Grace Period)\\s*[:\\-]?\\s*(?P<value>\\d{1,3}\\s*(?:months?|years?))",
+      "confidence": 0.92
+    },
+    {
+      "id": "moratorium_with",
+      "pattern": "\\bwith\\s+(?P<value>\\d{1,3}\\s*(?:\\([^)]*\\)\\s*)?months?)\\s+(?:moratorium|grace)",
+      "confidence": 0.82
+    }
+  ],
+  "nid": [
+    {
+      "id": "nid",
+      "pattern": "\\b(?:NID(?: No\\.?)?|National ID(?: No\\.?)?)\\s*[:\\-]?\\s*(?P<value>[0-9][0-9\\- ]{8,20})",
+      "confidence": 0.96
+    }
+  ],
+  "spouse_nid": [
+    {
+      "id": "spouse_nid",
+      "pattern": "\\b(?:Spouse|Wife|Husband|Guarantor)\\s+(?:NID|National ID)(?: No\\.?)?\\s*[:\\-]?\\s*(?P<value>[0-9][0-9\\- ]{8,20})",
+      "confidence": 0.94
+    }
+  ],
+  "mobile": [
+    {
+      "id": "mobile",
+      "pattern": "\\b(?:Mobile|Phone|Contact)(?: No\\.?)?\\s*[:\\-]?\\s*(?P<value>(?:\\+?880|0)?1[3-9][0-9\\- ]{8,12})",
+      "confidence": 0.9
+    }
+  ],
+  "account_number": [
+    {
+      "id": "account",
+      "pattern": "\\b(?:(?:A/C|Account)(?:\\s*(?:No\\.?|Number))?\\s*[:\\-]?\\s*(?P<value1>[0-9][0-9/\\- ]{4,24})|(?P<value2>(?:CD|SB|STD|SND|CC|OD|FDR|DPS)\\s*[/\\- ]*\\s*[0-9]{4,20}))",
+      "confidence": 0.9,
+      "group": "value1"
+    }
+  ],
+  "date_of_birth": [
+    {
+      "id": "dob",
+      "pattern": "\\b(?:Date of Birth|DOB)\\s*[:\\-]?\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4})",
+      "confidence": 0.96
+    }
+  ],
+  "age": [
+    {
+      "id": "age",
+      "pattern": "\\bAge\\s*[:\\-]?\\s*(?P<value>\\d{1,3})\\b",
+      "confidence": 0.86
+    }
+  ],
+  "application_date": [
+    {
+      "id": "date_of_application_customer",
+      "pattern": "\\bDate of application of the Customer\\s*:\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4})",
+      "confidence": 0.98
+    },
+    {
+      "id": "application_received_date",
+      "pattern": "\\bApplication Received Date\\s*:\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4})",
+      "confidence": 0.98
+    },
+    {
+      "id": "application_date",
+      "pattern": "\\bApplication Date\\s*[:\\-]?\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4})",
+      "confidence": 0.92
+    }
+  ],
+  "forwarding_date": [
+    {
+      "id": "forwarding_date",
+      "pattern": "\\b(?:Forwarding Date|Date)\\s*[:\\-]?\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4})",
+      "confidence": 0.65
+    }
+  ],
+  "cib_date": [
+    {
+      "id": "cib_date",
+      "pattern": "\\b(?:CIB[^\\n]{0,40}?(?:obtained|inquired|printed)(?: on)?|Inquired Date|Printed Date)\\s*[:\\-]?\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4})",
+      "confidence": 0.9
+    }
+  ],
+  "valuation_date": [
+    {
+      "id": "valuation_date",
+      "pattern": "\\b(?:Valuation Date|valued on|as of)\\s*[:\\-]?\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4,5})",
+      "confidence": 0.85
+    }
+  ],
+  "account_opening_date": [
+    {
+      "id": "account_open",
+      "pattern": "\\b(?:Account Opening Date|A/C Opening Date|opened on|maintained since)\\s*[:\\-]?\\s*(?P<value>\\d{1,2}[./-]\\d{1,2}[./-]\\d{4})",
+      "confidence": 0.88
+    }
+  ],
+  "designation": [
+    {
+      "id": "designation",
+      "pattern": "\\bDesignation\\s*[:\\-]\\s*(?P<value>[^\\n|]{2,100})",
+      "confidence": 0.86
+    }
+  ],
+  "employer": [
+    {
+      "id": "employer",
+      "pattern": "\\b(?:Employer|Organization|Office/School)\\s*[:\\-]\\s*(?P<value>[^\\n|]{2,160})",
+      "confidence": 0.84
+    }
+  ],
+  "monthly_income": [
+    {
+      "id": "monthly_income",
+      "pattern": "\\b(?:Monthly Income|Salary per month|Net Monthly Income)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Lac|Lakh)?)",
+      "confidence": 0.9
+    }
+  ],
+  "project_cost": [
+    {
+      "id": "project_cost",
+      "pattern": "\\b(?:Project Cost|Total Estimated Cost|Total Cost)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Crore|Cr\\.?|Lac|Lakh)?)",
+      "confidence": 0.9
+    }
+  ],
+  "market_value": [
+    {
+      "id": "market_value",
+      "pattern": "\\b(?:Market Value|MV)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.92
+    }
+  ],
+  "forced_sale_value": [
+    {
+      "id": "fsv",
+      "pattern": "\\b(?:Forced Sale Value|FSV)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.92
+    }
+  ],
+  "net_worth": [
+    {
+      "id": "net_worth",
+      "pattern": "\\b(?:Net Worth|Personal Net Worth|PNW)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Crore|Cr\\.?|Lac|Lakh)?)",
+      "confidence": 0.88
+    }
+  ],
+  "property_ownership": [
+    {
+      "id": "ownership",
+      "pattern": "\\b(?:Owner(?:ship)?|Owned by|Property Owner)\\s*[:\\-]?\\s*(?P<value>[^\\n|]{3,180})",
+      "confidence": 0.84
+    }
+  ],
+  "passport_number": [
+    {
+      "id": "passport",
+      "pattern": "\\bPassport(?: No\\.?| Number)?\\s*[:\\-]?\\s*(?P<value>[A-Z]{1,2}[0-9]{6,8})",
+      "confidence": 0.94
+    }
+  ],
+  "visa_status": [
+    {
+      "id": "visa",
+      "pattern": "\\b(?:Visa Status|Type of Visa|Work Permit)\\s*[:\\-]\\s*(?P<value>[^\\n|]{2,100})",
+      "confidence": 0.86
+    }
+  ],
+  "foreign_employer": [
+    {
+      "id": "foreign_employer",
+      "pattern": "\\b(?:Foreign Employer|Employer Abroad|Overseas Employer)\\s*[:\\-]\\s*(?P<value>[^\\n|]{2,160})",
+      "confidence": 0.86
+    }
+  ],
+  "remittance_evidence": [
+    {
+      "id": "remittance",
+      "pattern": "\\b(?:Remittance|Foreign Inward Remittance|SWIFT)\\s*[:\\-]?\\s*(?P<value>[^\\n|]{3,200})",
+      "confidence": 0.8
+    }
+  ],
+  "business_name": [
+    {
+      "id": "business_applicant_sentence",
+      "pattern": "\\bI/We\\s+(?P<value>[A-Z][A-Z &.'\\-]{3,120}?)\\s+hereby apply",
+      "confidence": 0.98
+    },
+    {
+      "id": "business_name_account",
+      "pattern": "\\bName of the A/C\\s*:\\s*(?P<value>[^\\n|]{3,120})",
+      "confidence": 0.99
+    },
+    {
+      "id": "business_borrower_address",
+      "pattern": "\\bBorrower(?:'|’)?s Name\\s*&\\s*address\\s*:\\s*(?P<value>[^,\\n|]{3,120})",
+      "confidence": 0.99
+    },
+    {
+      "id": "business_name",
+      "pattern": "\\b(?:Business Name|Name of Business|Name of Firm)\\s*[:\\-]\\s*(?P<value>[^\\n|]{2,120})",
+      "confidence": 0.9
+    }
+  ],
+  "business_nature": [
+    {
+      "id": "nature_of_business_colon",
+      "pattern": "\\bNature of Business\\s*:\\s*(?P<value>[^\\n|]{2,160})",
+      "confidence": 0.98
+    },
+    {
+      "id": "business_nature",
+      "pattern": "\\b(?:Nature of Business|Business Nature)\\s*[:\\-]\\s*(?P<value>[^\\n|]{2,160})",
+      "confidence": 0.88
+    }
+  ],
+  "trade_license": [
+    {
+      "id": "trade_license_split",
+      "pattern": "\\bTrade License No\\.?\\s*(?P<value>[A-Za-z0-9/\\-]{3,60})",
+      "confidence": 0.95
+    },
+    {
+      "id": "trade_license",
+      "pattern": "\\b(?:Trade Licen[cs]e(?: No\\.?)?)\\s*[:\\-]?\\s*(?P<value>[A-Za-z0-9/\\-]{3,60})",
+      "confidence": 0.9
+    }
+  ],
+  "tax_id": [
+    {
+      "id": "tax_id",
+      "pattern": "\\b(?:e-TIN|TIN)(?: No\\.?)?\\s*[:\\-]?\\s*(?P<value>[0-9]{9,15})",
+      "confidence": 0.92
+    }
+  ],
+  "sales": [
+    {
+      "id": "sales",
+      "pattern": "\\b(?:Annual Sales|Sales Turnover|Sales)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Crore|Cr\\.?|Lac|Lakh)?)",
+      "confidence": 0.8
+    }
+  ],
+  "net_profit": [
+    {
+      "id": "net_profit",
+      "pattern": "\\b(?:Net Profit|Profit after tax)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Crore|Cr\\.?|Lac|Lakh)?)",
+      "confidence": 0.84
+    }
+  ],
+  "bank_turnover": [
+    {
+      "id": "bank_turnover",
+      "pattern": "\\b(?:Bank Turnover|Credit Summation|Cr\\.? Summation)\\s*[:\\-]?\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?\\s*(?:Crore|Cr\\.?|Lac|Lakh)?)",
+      "confidence": 0.82
+    }
+  ],
+  "proprietor_name": [
+    {
+      "id": "prop_short",
+      "pattern": "\\bProp\\.?\\s*:\\s*(?P<value>[A-Za-z][A-Za-z .'-]{2,80})",
+      "confidence": 0.94
+    },
+    {
+      "id": "proprietor_subject",
+      "pattern": "\\bproprietor\\s*[-:]\\s*(?P<value>[A-Za-z][A-Za-z .'-]{2,80}?)(?=\\s*\\(|\\s*A/C|\\s*of our branch|$)",
+      "confidence": 0.96
+    },
+    {
+      "id": "proprietor_label",
+      "pattern": "\\bName of the Proprietor\\s*:\\s*(?P<value>[A-Za-z][A-Za-z .'-]{2,80})",
+      "confidence": 0.99
+    }
+  ],
+  "cib_status": [
+    {
+      "id": "cib_report_status",
+      "pattern": "\\bReport/Status\\s*(?P<value>NIL+|STD|SS|DF|BL)\\b",
+      "confidence": 0.9
+    },
+    {
+      "id": "cib_clearance",
+      "pattern": "\\bCIB Clearance Obtained\\s*:\\s*(?P<value>[^\\n|]{2,100})",
+      "confidence": 0.94
+    }
+  ],
+  "stock_value": [
+    {
+      "id": "present_stock",
+      "pattern": "\\bpresent stock[^\\n]{0,60}?assessed at\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.94
+    }
+  ],
+  "daily_sales": [
+    {
+      "id": "daily_average_sale",
+      "pattern": "\\bdaily average sale is\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.94
+    }
+  ],
+  "monthly_net_profit": [
+    {
+      "id": "monthly_net_profit",
+      "pattern": "\\bmonthly net profit will be\\s*(?P<value>(?:Tk\\.?|BDT)?\\s*[0-9,]+(?:\\.\\d+)?)",
+      "confidence": 0.94
+    }
+  ],
+  "general_interest_rate": [
+    {
+      "id": "general_interest",
+      "pattern": "\\b(?:General|Standard|Applicable|Normal|Default)?\\s*(?:Rate of Interest|Interest(?: Rate)?|ROI)\\s*[:@\\-]?\\s*(?P<value>\\d{1,2}(?:\\.\\d+)?\\s*%)",
+      "confidence": 0.9
+    },
+    {
+      "id": "general_interest_at",
+      "pattern": "@\\s*(?P<value>\\d{1,2}(?:\\.\\d+)?\\s*%)",
+      "confidence": 0.72
+    }
+  ],
+  "branch_recommended_rate": [
+    {
+      "id": "branch_recommended_rate",
+      "pattern": "\\b(?:Branch(?:'s)?\\s+)?(?:Recommended|Proposed)\\s+(?:Rate(?: of Interest)?|Interest Rate)\\s*[:@\\-]?\\s*(?P<value>\\d{1,2}(?:\\.\\d+)?\\s*%)",
+      "confidence": 0.98
+    }
+  ],
+  "approved_interest_rate": [
+    {
+      "id": "approved_rate",
+      "pattern": "\\b(?:Approved|Sanctioned|Finally Approved)\\s+(?:Rate(?: of Interest)?|Interest Rate)\\s*[:@\\-]?\\s*(?P<value>\\d{1,2}(?:\\.\\d+)?\\s*%)",
+      "confidence": 0.99
+    }
+  ]
+}

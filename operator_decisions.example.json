@@ -1,0 +1,16 @@
+{
+  "decisions": {
+    "branch": {
+      "value": "Jagannathpur Branch, Sunamgonj",
+      "note": "Confirmed by operator"
+    },
+    "interest_rate": {
+      "value": 12.0,
+      "note": "Approved product rate"
+    },
+    "project_cost": {
+      "value": "PENDING VERIFICATION",
+      "note": "Use engineer-certified estimate"
+    }
+  }
+}

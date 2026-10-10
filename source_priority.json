@@ -1,0 +1,310 @@
+{
+  "borrower_name": {
+    "nid": 100,
+    "loan_application": 95,
+    "forwarding": 100,
+    "cib": 85,
+    "declaration": 70,
+    "default": 30,
+    "credit_appraisal": 95
+  },
+  "father_name": {
+    "nid": 100,
+    "loan_application": 90,
+    "declaration": 75,
+    "default": 30
+  },
+  "mother_name": {
+    "nid": 100,
+    "loan_application": 90,
+    "declaration": 75,
+    "default": 30
+  },
+  "spouse_name": {
+    "nid": 100,
+    "loan_application": 90,
+    "guarantor_declaration": 90,
+    "default": 30
+  },
+  "guarantor_name": {
+    "guarantor_declaration": 100,
+    "cib": 95,
+    "loan_application": 90,
+    "forwarding": 85,
+    "default": 30
+  },
+  "branch": {
+    "forwarding": 100,
+    "cib": 95,
+    "loan_application": 80,
+    "consent_letter": 55,
+    "default": 30,
+    "credit_appraisal": 95
+  },
+  "loan_product": {
+    "forwarding": 100,
+    "loan_application": 98,
+    "default": 30,
+    "credit_appraisal": 100
+  },
+  "loan_amount": {
+    "forwarding": 100,
+    "loan_application": 98,
+    "default": 30,
+    "credit_appraisal": 100
+  },
+  "purpose": {
+    "forwarding": 100,
+    "loan_application": 96,
+    "estimate": 75,
+    "default": 30,
+    "credit_appraisal": 98
+  },
+  "tenure_months": {
+    "forwarding": 100,
+    "loan_application": 95,
+    "default": 30,
+    "credit_appraisal": 90
+  },
+  "moratorium_months": {
+    "forwarding": 100,
+    "loan_application": 90,
+    "default": 30
+  },
+  "interest_rate": {
+    "forwarding": 98,
+    "loan_application": 95,
+    "default": 30,
+    "credit_appraisal": 100
+  },
+  "nid": {
+    "nid": 100,
+    "loan_application": 80,
+    "default": 30
+  },
+  "spouse_nid": {
+    "nid": 100,
+    "guarantor_declaration": 90,
+    "loan_application": 80,
+    "default": 30
+  },
+  "mobile": {
+    "nid": 90,
+    "loan_application": 85,
+    "forwarding": 80,
+    "default": 30
+  },
+  "account_number": {
+    "bank_statement": 100,
+    "loan_application": 90,
+    "forwarding": 85,
+    "default": 30,
+    "credit_appraisal": 95
+  },
+  "date_of_birth": {
+    "nid": 100,
+    "loan_application": 80,
+    "default": 30
+  },
+  "age": {
+    "nid": 80,
+    "loan_application": 70,
+    "default": 30
+  },
+  "application_date": {
+    "loan_application": 100,
+    "default": 30,
+    "credit_appraisal": 95
+  },
+  "forwarding_date": {
+    "forwarding": 100,
+    "default": 30
+  },
+  "cib_date": {
+    "cib": 100,
+    "forwarding": 70,
+    "default": 30,
+    "credit_appraisal": 95,
+    "loan_application": 92
+  },
+  "valuation_date": {
+    "valuation": 100,
+    "default": 30
+  },
+  "account_opening_date": {
+    "bank_statement": 100,
+    "loan_application": 85,
+    "forwarding": 80,
+    "default": 30
+  },
+  "designation": {
+    "income_proof": 100,
+    "loan_application": 80,
+    "forwarding": 75,
+    "default": 30
+  },
+  "employer": {
+    "income_proof": 100,
+    "loan_application": 80,
+    "forwarding": 75,
+    "default": 30
+  },
+  "monthly_income": {
+    "income_proof": 100,
+    "bank_statement": 90,
+    "forwarding": 75,
+    "loan_application": 70,
+    "default": 30
+  },
+  "project_cost": {
+    "estimate": 100,
+    "forwarding": 85,
+    "loan_application": 75,
+    "default": 30
+  },
+  "market_value": {
+    "valuation": 100,
+    "forwarding": 70,
+    "default": 30
+  },
+  "forced_sale_value": {
+    "valuation": 100,
+    "forwarding": 70,
+    "default": 30
+  },
+  "net_worth": {
+    "financial_statement": 95,
+    "declaration": 85,
+    "forwarding": 75,
+    "default": 30
+  },
+  "property_ownership": {
+    "legal_opinion": 100,
+    "title_deed": 100,
+    "valuation": 85,
+    "declaration": 80,
+    "forwarding": 70,
+    "default": 30
+  },
+  "passport_number": {
+    "passport": 100,
+    "loan_application": 70,
+    "default": 30
+  },
+  "visa_status": {
+    "passport": 100,
+    "income_proof": 85,
+    "default": 30
+  },
+  "foreign_employer": {
+    "income_proof": 100,
+    "passport": 80,
+    "loan_application": 70,
+    "default": 30
+  },
+  "remittance_evidence": {
+    "remittance_proof": 100,
+    "bank_statement": 85,
+    "default": 30
+  },
+  "business_name": {
+    "trade_license": 100,
+    "loan_application": 96,
+    "forwarding": 98,
+    "default": 30,
+    "credit_appraisal": 95
+  },
+  "business_nature": {
+    "trade_license": 100,
+    "loan_application": 90,
+    "forwarding": 85,
+    "default": 30,
+    "credit_appraisal": 95
+  },
+  "trade_license": {
+    "trade_license": 100,
+    "loan_application": 90,
+    "default": 30
+  },
+  "tax_id": {
+    "tax_document": 100,
+    "loan_application": 75,
+    "default": 30
+  },
+  "sales": {
+    "financial_statement": 100,
+    "forwarding": 75,
+    "default": 30,
+    "credit_appraisal": 100,
+    "loan_application": 98
+  },
+  "net_profit": {
+    "financial_statement": 100,
+    "forwarding": 75,
+    "default": 30,
+    "credit_appraisal": 100,
+    "loan_application": 98
+  },
+  "bank_turnover": {
+    "bank_statement": 100,
+    "forwarding": 70,
+    "default": 30,
+    "credit_appraisal": 98,
+    "loan_application": 92,
+    "limit_utilization": 100
+  },
+  "proprietor_name": {
+    "forwarding": 100,
+    "loan_application": 98,
+    "credit_appraisal": 90,
+    "declaration": 85,
+    "default": 30
+  },
+  "cib_status": {
+    "cib": 100,
+    "credit_appraisal": 95,
+    "forwarding": 90,
+    "default": 30
+  },
+  "stock_value": {
+    "stock_statement": 100,
+    "forwarding": 90,
+    "contact_point": 85,
+    "default": 30
+  },
+  "daily_sales": {
+    "forwarding": 95,
+    "contact_point": 90,
+    "default": 30
+  },
+  "monthly_net_profit": {
+    "forwarding": 95,
+    "credit_appraisal": 90,
+    "default": 30
+  },
+  "guarantor_names": {
+    "credit_appraisal": 100,
+    "forwarding": 95,
+    "guarantor_declaration": 95,
+    "default": 30
+  },
+  "general_interest_rate": {
+    "product_guideline": 100,
+    "loan_application": 92,
+    "credit_appraisal": 90,
+    "forwarding": 85,
+    "default": 30
+  },
+  "branch_recommended_rate": {
+    "forwarding": 100,
+    "credit_appraisal": 100,
+    "loan_application": 90,
+    "default": 30
+  },
+  "approved_interest_rate": {
+    "sanction_letter": 100,
+    "credit_committee": 100,
+    "approval": 100,
+    "default": 30
+  }
+}
