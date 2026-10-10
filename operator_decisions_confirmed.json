@@ -1,0 +1,52 @@
+{
+  "case": "Rana Miah",
+  "confirmation_date": "2026-07-19",
+  "confirmation_status": "All operator decisions confirmed",
+  "approved_decisions": [
+    {
+      "id": "Q01",
+      "decision": "Jagannathpur Branch confirmed.",
+      "implementation": "Treat the Jamalgonj Branch consent letter as defective and require correction."
+    },
+    {
+      "id": "Q02",
+      "decision": "Use 12% per annum.",
+      "implementation": "Apply 12% p.a. with quarterly rest, subject to the bank's approved product terms."
+    },
+    {
+      "id": "Q03",
+      "decision": "Use the corrected engineer-certified project estimate.",
+      "implementation": "Do not select either conflicting project-cost version until the certified estimate is available."
+    },
+    {
+      "id": "Q04",
+      "decision": "Treat Rana Miah and Rubina Akther as joint owners/mortgagors.",
+      "implementation": "Final wording remains subject to confirmation from title deed and legal opinion."
+    },
+    {
+      "id": "Q05",
+      "decision": "Hold the claimed borrower and spouse income until supporting evidence is received.",
+      "implementation": "Do not rely on unsupported Tk.7.00 Lac and Tk.3.00 Lac income in final repayment assessment."
+    },
+    {
+      "id": "Q06",
+      "decision": "Use the CBS-confirmed account-opening date.",
+      "implementation": "Do not select 08.02.2026 or 18.02.2026 without the CBS record."
+    },
+    {
+      "id": "Q07",
+      "decision": "Use the verified amortization schedule and the bank-approved DBR formula.",
+      "implementation": "Do not rely on the inconsistent EMI/DBR figures in the submitted papers."
+    },
+    {
+      "id": "Q08",
+      "decision": "Use the engineer-confirmed building and floor-area description.",
+      "implementation": "Do not select any conflicting area description until verified."
+    }
+  ],
+  "document_generation_rule": {
+    "notesheet": "May be prepared as a controlled draft. Missing authoritative figures must be marked pending verification and must not be invented.",
+    "sanction_letter": "May be prepared as a controlled draft only after the approved project cost, CBS date, amortization/DBR and engineer-confirmed building description are available.",
+    "anomaly_letter": "Ready for preparation using the confirmed decisions and identified shortcomings."
+  }
+}

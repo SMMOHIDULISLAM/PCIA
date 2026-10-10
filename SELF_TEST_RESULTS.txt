@@ -1,0 +1,28 @@
+PCIA FINAL CORE - VERIFIED SELF TEST
+====================================
+
+Test case: previously unseen synthetic borrower dataset supplied through
+mixed DOCX, TXT, CSV and XLSX files inside a ZIP.
+
+Master Notesheet result:
+- Safe generation: PASS
+- Mapped replacements: 118
+- Replacement failures: 0
+- Old critical model identities remaining: 0
+
+Master Sanction Letter result:
+- Safe generation: PASS
+- Mapped replacements: 30
+- Replacement failures: 0
+- Old critical model identities remaining: 0
+
+Visual QA completed:
+- Notesheet: 5 rendered pages inspected
+- Sanction Letter: 6 rendered pages inspected
+- Master page structures, tables, headers, footers and letterhead retained
+- New borrower/branch data visible in generated outputs
+- Missing evidence displayed as N/F
+
+Known production boundary:
+Scanned or handwritten evidence requires Tesseract OCR. Unreadable evidence
+is never guessed and is presented as N/F for operator review.

@@ -1,1 +1,11 @@
-1.2.0
+PCIA Enterprise Credit Processing Platform
+Version: 1.1.3 - Content-Aware Evidence Intelligence
+Build date: 2026-07-16
+
+Key additions:
+- Reads every file and classifies internal pages/sections by content, not filename.
+- Service-holder and businessman profiles are treated differently.
+- Branch-forwarding product, profession and purpose are extracted before N/F.
+- Model-vs-evidence conflicts require an operator decision.
+- Generates Regional Office anomaly and shortcoming letters.
+- Detects arithmetic, identity, product, security, property and stale-document anomalies.
