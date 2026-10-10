@@ -1,0 +1,60 @@
+﻿id,field,master_current_value,page,replacement_source
+V0001,Branch name and location,"Jalalpur Branch, Sylhet",1,Uploaded customer/branch documents
+V0002,Account / borrower short name,A/C. Ali Ahmed,1,Uploaded customer/branch documents
+V0003,Note sheet date,09.04.2026,1,Uploaded customer/branch documents
+V0004,Application receipt date,01.03.2026,1,Uploaded customer/branch documents
+V0005,Proposal sending date,25.03.2026,1,Uploaded customer/branch documents
+V0006,Regional Office receipt date,30.03.2026,1,Uploaded customer/branch documents
+V0007,Other documents receipt date,08.04.2026,1,Uploaded customer/branch documents
+V0008,Proposal summary,"Facility, amount, purpose, rate, tenure, grace, borrower, branch",1,Uploaded customer/branch documents
+V0009,Customer name,Md. Ali Ahmed,1,Uploaded customer/branch documents
+V0010,Account numbers and opening dates,39619010014056; 84969 and dates,1,Uploaded customer/branch documents
+V0011,Previous sanction details,"Facility, amount and date",1,Uploaded customer/branch documents
+V0012,Office/business address and phone,Raykhail...01712-966892,1,Uploaded customer/branch documents
+V0013,Residence address,As Above,1,Uploaded customer/branch documents
+V0014,Legal status,Individual,1,Uploaded customer/branch documents
+V0015,Business establishment / experience,Doing business since 2018,1,Uploaded customer/branch documents
+V0016,GIR/TIN number,870305697067,1,Uploaded customer/branch documents
+V0017,Proprietor/director details,"Name, parents, position, age, shareholding, net worth, CIB",1,Uploaded customer/branch documents
+V0018,Second line management,N/A,1,Uploaded customer/branch documents
+V0019,Guarantor details,"Name, relation, age, profession, net worth, CIB",1,Uploaded customer/branch documents
+V0020,Building cost estimate,Tk.277.41 Lac,1,Uploaded customer/branch documents
+V0021,Cost already incurred,Tk.23.80 Lac,1,Uploaded customer/branch documents
+V0022,Total work completion requirement,Tk.85.58 Lac,1,Uploaded customer/branch documents
+V0023,Applied loan amount,Tk.40.00 Lac,1,Uploaded customer/branch documents
+V0024,Capital / investment,Tk.120.00 Lac,1,Uploaded customer/branch documents
+V0025,Nature of business,Dairy Farm & Fattening Cows,1,Uploaded customer/branch documents
+V0026,Existing facility table,NIL / actual facilities,1,Uploaded customer/branch documents
+V0027,Sister concern liability table,Actual sister concern liabilities,1,Uploaded customer/branch documents
+V0028,Other bank liability table,Actual other-bank liabilities,2,Uploaded customer/branch documents
+V0029,Borrower brief history,Full narrative,2,Uploaded customer/branch documents
+V0030,Reason / justification,Full narrative,2,Uploaded customer/branch documents
+V0031,Guarantor liability table,Actual liabilities,2,Uploaded customer/branch documents
+V0032,Primary security,Actual primary security,2,Uploaded customer/branch documents
+V0033,Collateral property description,Full mortgage/property description,2,Uploaded customer/branch documents
+V0034,Collateral valuation,"Land rate, market value, FSV",2,Uploaded customer/branch documents
+V0035,Survey firm and valuation date,Firm and date,2,Uploaded customer/branch documents
+V0036,Physical verification dates,BM/RM dates,2,Uploaded customer/branch documents
+V0037,Account performance,Period and debit/credit summation,2,Uploaded customer/branch documents
+V0038,Turnover analysis,Highest/lowest balances,2,Uploaded customer/branch documents
+V0039,EOL / adjustments / same-day transaction,Actual statuses,3,Uploaded customer/branch documents
+V0040,ICRR scores,"Quantitative, qualitative, total",3,Uploaded customer/branch documents
+V0041,Repayment-capacity table,"Years, limit, credit summation, sales",3,Uploaded customer/branch documents
+V0042,Sales / credit summation,Actual values,3,Uploaded customer/branch documents
+V0043,Borrower CIB result and date,Actual CIB result/date,3,Uploaded customer/branch documents
+V0044,DBR,Actual calculation/result,3,Uploaded customer/branch documents
+V0045,Present proposal,Full proposal text,3,Uploaded customer/branch documents
+V0046,BM recommendation,Actual recommendation,3,Uploaded customer/branch documents
+V0047,Checklist statuses,Submitted / missing / N/A,3,Uploaded customer/branch documents
+V0048,CAO observations,Actual observations,3,Uploaded customer/branch documents
+V0049,CAO officer name/designation,Actual officer,3,Uploaded customer/branch documents
+V0050,Reviewing officers,Names/designations,4,Uploaded customer/branch documents
+V0051,Committee meeting number/date,Actual meeting details,4,Uploaded customer/branch documents
+V0052,Recommended sanction limit,Actual limit,4,Uploaded customer/branch documents
+V0053,Validity period,Actual validity,4,Uploaded customer/branch documents
+V0054,Interest rate,Actual rate,4,Uploaded customer/branch documents
+V0055,Purpose,Actual purpose,4,Uploaded customer/branch documents
+V0056,Security terms,Actual security terms,4,Uploaded customer/branch documents
+V0057,Special instruction,Actual special instruction,4,Uploaded customer/branch documents
+V0058,Committee members / approvers,Actual names/designations,4,Uploaded customer/branch documents
+V0059,Final approval / recommendation,Actual decision and signatures,5,Uploaded customer/branch documents

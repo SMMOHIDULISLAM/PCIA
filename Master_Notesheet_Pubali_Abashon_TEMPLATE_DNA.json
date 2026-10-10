@@ -1,0 +1,421 @@
+{
+  "template": "Pubali Abashon Notesheet",
+  "fixed": "All black/unmarked content and all layout remain unchanged",
+  "variable": "All red content must be replaced from case documents; if unavailable use DATA MISSING",
+  "variables": [
+    {
+      "id": "V0001",
+      "field": "Branch name and location",
+      "master_current_value": "Jalalpur Branch, Sylhet",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0002",
+      "field": "Account / borrower short name",
+      "master_current_value": "A/C. Ali Ahmed",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0003",
+      "field": "Note sheet date",
+      "master_current_value": "09.04.2026",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0004",
+      "field": "Application receipt date",
+      "master_current_value": "01.03.2026",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0005",
+      "field": "Proposal sending date",
+      "master_current_value": "25.03.2026",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0006",
+      "field": "Regional Office receipt date",
+      "master_current_value": "30.03.2026",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0007",
+      "field": "Other documents receipt date",
+      "master_current_value": "08.04.2026",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0008",
+      "field": "Proposal summary",
+      "master_current_value": "Facility, amount, purpose, rate, tenure, grace, borrower, branch",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0009",
+      "field": "Customer name",
+      "master_current_value": "Md. Ali Ahmed",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0010",
+      "field": "Account numbers and opening dates",
+      "master_current_value": "39619010014056; 84969 and dates",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0011",
+      "field": "Previous sanction details",
+      "master_current_value": "Facility, amount and date",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0012",
+      "field": "Office/business address and phone",
+      "master_current_value": "Raykhail...01712-966892",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0013",
+      "field": "Residence address",
+      "master_current_value": "As Above",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0014",
+      "field": "Legal status",
+      "master_current_value": "Individual",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0015",
+      "field": "Business establishment / experience",
+      "master_current_value": "Doing business since 2018",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0016",
+      "field": "GIR/TIN number",
+      "master_current_value": "870305697067",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0017",
+      "field": "Proprietor/director details",
+      "master_current_value": "Name, parents, position, age, shareholding, net worth, CIB",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0018",
+      "field": "Second line management",
+      "master_current_value": "N/A",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0019",
+      "field": "Guarantor details",
+      "master_current_value": "Name, relation, age, profession, net worth, CIB",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0020",
+      "field": "Building cost estimate",
+      "master_current_value": "Tk.277.41 Lac",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0021",
+      "field": "Cost already incurred",
+      "master_current_value": "Tk.23.80 Lac",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0022",
+      "field": "Total work completion requirement",
+      "master_current_value": "Tk.85.58 Lac",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0023",
+      "field": "Applied loan amount",
+      "master_current_value": "Tk.40.00 Lac",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0024",
+      "field": "Capital / investment",
+      "master_current_value": "Tk.120.00 Lac",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0025",
+      "field": "Nature of business",
+      "master_current_value": "Dairy Farm & Fattening Cows",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0026",
+      "field": "Existing facility table",
+      "master_current_value": "NIL / actual facilities",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0027",
+      "field": "Sister concern liability table",
+      "master_current_value": "Actual sister concern liabilities",
+      "page": 1,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0028",
+      "field": "Other bank liability table",
+      "master_current_value": "Actual other-bank liabilities",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0029",
+      "field": "Borrower brief history",
+      "master_current_value": "Full narrative",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0030",
+      "field": "Reason / justification",
+      "master_current_value": "Full narrative",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0031",
+      "field": "Guarantor liability table",
+      "master_current_value": "Actual liabilities",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0032",
+      "field": "Primary security",
+      "master_current_value": "Actual primary security",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0033",
+      "field": "Collateral property description",
+      "master_current_value": "Full mortgage/property description",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0034",
+      "field": "Collateral valuation",
+      "master_current_value": "Land rate, market value, FSV",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0035",
+      "field": "Survey firm and valuation date",
+      "master_current_value": "Firm and date",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0036",
+      "field": "Physical verification dates",
+      "master_current_value": "BM/RM dates",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0037",
+      "field": "Account performance",
+      "master_current_value": "Period and debit/credit summation",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0038",
+      "field": "Turnover analysis",
+      "master_current_value": "Highest/lowest balances",
+      "page": 2,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0039",
+      "field": "EOL / adjustments / same-day transaction",
+      "master_current_value": "Actual statuses",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0040",
+      "field": "ICRR scores",
+      "master_current_value": "Quantitative, qualitative, total",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0041",
+      "field": "Repayment-capacity table",
+      "master_current_value": "Years, limit, credit summation, sales",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0042",
+      "field": "Sales / credit summation",
+      "master_current_value": "Actual values",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0043",
+      "field": "Borrower CIB result and date",
+      "master_current_value": "Actual CIB result/date",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0044",
+      "field": "DBR",
+      "master_current_value": "Actual calculation/result",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0045",
+      "field": "Present proposal",
+      "master_current_value": "Full proposal text",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0046",
+      "field": "BM recommendation",
+      "master_current_value": "Actual recommendation",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0047",
+      "field": "Checklist statuses",
+      "master_current_value": "Submitted / missing / N/A",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0048",
+      "field": "CAO observations",
+      "master_current_value": "Actual observations",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0049",
+      "field": "CAO officer name/designation",
+      "master_current_value": "Actual officer",
+      "page": 3,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0050",
+      "field": "Reviewing officers",
+      "master_current_value": "Names/designations",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0051",
+      "field": "Committee meeting number/date",
+      "master_current_value": "Actual meeting details",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0052",
+      "field": "Recommended sanction limit",
+      "master_current_value": "Actual limit",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0053",
+      "field": "Validity period",
+      "master_current_value": "Actual validity",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0054",
+      "field": "Interest rate",
+      "master_current_value": "Actual rate",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0055",
+      "field": "Purpose",
+      "master_current_value": "Actual purpose",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0056",
+      "field": "Security terms",
+      "master_current_value": "Actual security terms",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0057",
+      "field": "Special instruction",
+      "master_current_value": "Actual special instruction",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0058",
+      "field": "Committee members / approvers",
+      "master_current_value": "Actual names/designations",
+      "page": 4,
+      "replacement_source": "Uploaded customer/branch documents"
+    },
+    {
+      "id": "V0059",
+      "field": "Final approval / recommendation",
+      "master_current_value": "Actual decision and signatures",
+      "page": 5,
+      "replacement_source": "Uploaded customer/branch documents"
+    }
+  ],
+  "marked_paragraphs": 139
+}

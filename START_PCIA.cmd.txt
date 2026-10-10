@@ -1,0 +1,6 @@
+@echo off
+cd /d D:\PCIA
+start "PCIA Server" powershell -NoExit -ExecutionPolicy Bypass -File RUN_PCIA.ps1
+timeout /t 3 >nul
+start http://127.0.0.1:5050
+exit

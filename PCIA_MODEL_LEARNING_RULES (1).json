@@ -1,0 +1,143 @@
+{
+  "source_file": "111111111111111111111.docx",
+  "authority": "Operator remarks are authoritative where checkbox columns are blank or ambiguous.",
+  "global_rules": {
+    "template_structure": "fixed",
+    "fonts_styles_tables_headers_footers": "fixed unless a listed field inside them is variable",
+    "missing_value_policy": "Use N/F or NOT FOUND; never retain old borrower/model data.",
+    "replacement_scope": [
+      "header",
+      "footer",
+      "body",
+      "tables",
+      "nested tables",
+      "text boxes",
+      "shapes"
+    ],
+    "output": "Create a new document; never overwrite the master."
+  },
+  "notesheet": {
+    "fixed": [
+      "Bank Name / Heading",
+      "Regional Office Name",
+      "Region Name",
+      "RRM Recommendation",
+      "DGM Observation",
+      "Special Instructions",
+      "Approval / Signature Block"
+    ],
+    "variable": [
+      "Branch Name",
+      "Sub Branch Name",
+      "Branch Address",
+      "Account Reference Line",
+      "Borrower / Customer Name",
+      "Notesheet Date",
+      "Application Receipt Date",
+      "Proposal Sending Date",
+      "Regional Office Receipt Date",
+      "Query Reply Date",
+      "Proposal Subject Paragraph",
+      "Customer Information Section",
+      "Father Name",
+      "Mother Name",
+      "NID Information",
+      "Present Address",
+      "Permanent Address",
+      "Business Name",
+      "Age / Date of Birth",
+      "Nature of Business",
+      "Business Age",
+      "Mobile Number",
+      "Earlier Occupation",
+      "Monthly Income",
+      "Monthly Expenditure",
+      "Liability Position",
+      "CIB Information",
+      "Guarantor Information 1",
+      "Guarantor Information 2",
+      "Present Proposal",
+      "Customer Approach Paragraph",
+      "BM Recommendation",
+      "Documents Submitted by Branch",
+      "Brief History of Borrower / Business",
+      "Justification Paragraph",
+      "Financial Analysis",
+      "Security / Credit Risk Discussion",
+      "Recommendation Paragraph"
+    ],
+    "hybrid_fixed_wording_variable_values": [
+      "Credit Committee Discussion Paragraph",
+      "Sanction Terms (Amount, Tenure, Rate, Purpose)"
+    ],
+    "not_applicable": [
+      "Copy Distribution Section"
+    ],
+    "narrative_sources": {
+      "Brief History": [
+        "Branch Forwarding",
+        "Other branch/customer documents"
+      ],
+      "Business Background": [
+        "Branch Forwarding",
+        "Other branch/customer documents"
+      ],
+      "Justification": [
+        "Branch Forwarding",
+        "Other branch/customer documents"
+      ],
+      "Risk Analysis": [
+        "Branch documents",
+        "Other evidence files"
+      ],
+      "Present Proposal": [
+        "Branch documents",
+        "Other evidence files"
+      ],
+      "Recommendation": [
+        "Branch documents",
+        "Other evidence files"
+      ]
+    }
+  },
+  "sanction_letter": {
+    "fixed": [
+      "Bank Letterhead",
+      "Regional Office",
+      "Reference Number",
+      "Date",
+      "Opening Approval Paragraph",
+      "Interest / Profit / Rent Rate (fixed by model and loan product)",
+      "Repayment Terms",
+      "Purpose of Loan (fixed by model and loan product)",
+      "Documentation Clause",
+      "Special Conditions",
+      "General Terms and Conditions",
+      "Acceptance Clause",
+      "Authorized Signatory Names",
+      "Designation",
+      "Copy Section"
+    ],
+    "variable": [
+      "Branch Information",
+      "Borrower Name",
+      "Borrower Address",
+      "Subject Line",
+      "Facility Type",
+      "Sanction Amount",
+      "Amount in Words",
+      "Tenure",
+      "Grace Period",
+      "Security Details",
+      "Collateral Details",
+      "Insurance Clause (as instructed by the model)"
+    ]
+  },
+  "model_learning_output_required": [
+    "Fixed structure elements",
+    "Fixed text elements",
+    "Replaceable variables",
+    "Required borrower input fields",
+    "Missing information handling rules"
+  ]
+}
