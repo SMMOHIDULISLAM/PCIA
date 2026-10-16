@@ -40,10 +40,11 @@ Open PowerShell in this folder:
 
 ```powershell
 py -3.11 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
+
+Run commands from the repository root. The `pcia/` directory contains the CLI package, `config/` holds extraction rules, and `tests/` contains regression tests. Use `.\.venv\Scripts\python.exe` in place of `python` below when the virtual environment is not activated.
 
 For scanned Bangla/English files, install Tesseract separately and ensure `tesseract.exe` is on PATH. The engine invokes OCR only when `--ocr` is supplied and a page has little or no native text.
 
@@ -206,3 +207,5 @@ Never add a broad “first name/first amount in the document” rule. Every extr
 ```powershell
 python -m unittest discover -s tests -v
 ```
+
+GitHub Actions runs the dependency check, CLI import check, and regression suite on Python 3.11 for pushes and pull requests. OCR requires Tesseract and the relevant language data installed separately.
